@@ -52,8 +52,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 36.1875rem;
-    width: 20.4375rem;
+    justify-content: space-evenly;
+    min-height: 36.1875rem;
+    height: 60%;
+    width: 87.2%;
     background-color: var(--Gray-800);
     padding: 1.5rem;
     text-align: center;
@@ -91,6 +93,7 @@ main {
 
 .button-container {
     height: 18.0625rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -126,20 +129,24 @@ button:focus {
 
 @media (min-width: 376px) {
     .card-container {
-        height: 38.1875rem;
-        width: 28.5rem;
+        max-height: 38.1875rem;
+        max-width: 28.5rem;
     }
 
     .button-container {
-        height: 18.0625rem;
-        width: 23.5rem;
+        max-height: 18.0625rem;
+        max-width: 23.5rem;
     }
 }
 
 @media (min-width: 769px) {
+    .card-container {
+        max-height: 38.1875rem;
+        max-width: 24rem;
+    }
 
-}
-
-@media (min-width: 1440px) {
-
+    .button-container {
+        max-height: 18.0625rem;
+        max-width: 19rem;
+    }
 }
