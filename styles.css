@@ -82,7 +82,7 @@ main {
   font-size: var(--inter-font-size-medium);
   font-weight: bold;
   color: var(--Green);
-  margin: 0;
+  margin: .5rem 0;
 }
 
 .hero-desc > p {
