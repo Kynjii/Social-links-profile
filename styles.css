@@ -1,152 +1,149 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    height: 100dvh;
+  height: 100dvh;
 }
 
 body {
-    margin: 0;
-    height: 100%;
-    font-family: "Inter", sans-serif;
-    font-size: var(--inter-font-size-medium);
-    background-color: var(--Gray-900);
-    color: var(--White);
+  margin: 0;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: var(--inter-font-size-medium);
+  background-color: var(--Gray-900);
+  color: var(--White);
 }
 
 main {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* STYLE GUIDE */
 :root {
+  /* Main Colors */
+  --Gray-900: #141414;
+  --Gray-800: #1f1f1f;
+  --Gray-700: #333333;
+  --Green: #c4f82a;
+  --White: #ffffff;
 
-    /* Main Colors */
-    --Gray-900: #141414;
-    --Gray-800: #1F1F1F;
-    --Gray-700: #333333;
-    --Green: #C4F82A;
-    --White: #FFFFFF;
+  /* Typography */
 
+  /* Inter */
+  --inter-line-height: 150%;
+  --inter-letter-spacing: 0px;
 
-    /* Typography */
+  /* Preset 1 24px */
+  --inter-font-size-large: 1.5rem;
 
-    /* Inter */
-    --inter-line-height: 150%;
-    --inter-letter-spacing: 0px;
-
-    /* Preset 1 24px */
-    --inter-font-size-large: 1.5rem;
-
-    /* Preset 2 14px */
-    --inter-font-size-medium: 0.875rem;
+  /* Preset 2 14px */
+  --inter-font-size-medium: 0.875rem;
 }
 
 /* Main Styling */
 
 .card-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    min-height: 36.1875rem;
-    height: 60%;
-    width: 87.2%;
-    background-color: var(--Gray-800);
-    padding: 1.5rem;
-    text-align: center;
-    border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 36.1875rem;
+  height: 60%;
+  width: 87.2%;
+  background-color: var(--Gray-800);
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 0.75rem;
 }
 
 .hero-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-container > img {
-    align-self: center;
-    height: 5.5rem;
-    border-radius: 50%;
-    margin-bottom: 1.5rem;
+  align-self: center;
+  height: 5.5rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
 }
 
 .hero-name-location-container > h1 {
-    font-size: var(--inter-font-size-large);
-    margin: 0;
+  font-size: var(--inter-font-size-large);
+  margin: 0;
 }
 
 .hero-name-location-container > h2 {
-    font-size: var(--inter-font-size-medium);
-    font-weight: bold;
-    color: var(--Green);
-    margin: 0;
+  font-size: var(--inter-font-size-medium);
+  font-weight: bold;
+  color: var(--Green);
+  margin: 0;
 }
 
 .hero-desc > p {
-    margin: 1.5rem 0;
+  margin: 1.5rem 0;
 }
 
 .button-container {
-    height: 18.0625rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  height: 18.0625rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* Button Styling */
 
 button {
-    background-color: var(--Gray-700);
-    color: var(--White);
-    font-weight: bold;
-    width: 100%;
-    height: 2.8125rem;
-    border-radius: 8px;
-    border: 0;
-    padding: 0;
-    font-family: inherit;
-    transition: all .4s ease-in;
+  background-color: var(--Gray-700);
+  color: var(--White);
+  font-weight: bold;
+  width: 100%;
+  height: 2.8125rem;
+  border-radius: 8px;
+  border: 0;
+  padding: 0;
+  font-family: inherit;
+  transition: all 0.4s ease-in;
 }
 
 button:hover,
 button:focus {
-    background-color: var(--Green);
-    color: var(--Gray-700);
-    cursor: pointer;
-    transition: all .4s ease-out;
+  background-color: var(--Green);
+  color: var(--Gray-700);
+  cursor: pointer;
+  transition: all 0.4s ease-out;
 }
-
 
 /* ============
     Media Queries
     =========== */
 
 @media (min-width: 376px) {
-    .card-container {
-        max-height: 38.1875rem;
-        max-width: 28.5rem;
-    }
+  .card-container {
+    max-height: 38.1875rem;
+    max-width: 28.5rem;
+  }
 
-    .button-container {
-        max-height: 18.0625rem;
-        max-width: 23.5rem;
-    }
+  .button-container {
+    max-height: 18.0625rem;
+    max-width: 23.5rem;
+  }
 }
 
 @media (min-width: 769px) {
-    .card-container {
-        max-height: 38.1875rem;
-        max-width: 24rem;
-    }
+  .card-container {
+    max-height: 38.1875rem;
+    max-width: 24rem;
+  }
 
-    .button-container {
-        max-height: 18.0625rem;
-        max-width: 19rem;
-    }
+  .button-container {
+    max-height: 18.0625rem;
+    max-width: 19rem;
+  }
 }
