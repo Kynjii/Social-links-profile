@@ -11,7 +11,15 @@ body {
     height: 100%;
     font-family: "Inter", sans-serif;
     font-size: var(--inter-font-size-medium);
-    background-color: var(--Yellow);
+    background-color: var(--Gray-900);
+    color: var(--White);
+}
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* STYLE GUIDE */
@@ -40,7 +48,53 @@ body {
 
 /* Main Styling */
 
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 36.1875rem;
+    width: 20.4375rem;
+    background-color: var(--Gray-800);
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 0.75rem;
+}
 
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-container > img {
+    align-self: center;
+    height: 5.5rem;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.hero-name-location-container > h1 {
+    font-size: var(--inter-font-size-large);
+    margin: 0;
+}
+
+.hero-name-location-container > h2 {
+    font-size: var(--inter-font-size-medium);
+    font-weight: bold;
+    color: var(--Green);
+    margin: 0;
+}
+
+.hero-desc > p {
+    margin: 1.5rem 0;
+}
+
+.button-container {
+    height: 18.0625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 /* Button Styling */
 
@@ -48,15 +102,21 @@ button {
     background-color: var(--Gray-700);
     color: var(--White);
     font-weight: bold;
-    width: 21.714rem;
+    width: 100%;
     height: 2.8125rem;
     border-radius: 8px;
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    transition: all .4s ease-in;
 }
 
 button:hover,
 button:focus {
     background-color: var(--Green);
     color: var(--Gray-700);
+    cursor: pointer;
+    transition: all .4s ease-out;
 }
 
 
@@ -65,5 +125,21 @@ button:focus {
     =========== */
 
 @media (min-width: 376px) {
+    .card-container {
+        height: 38.1875rem;
+        width: 28.5rem;
+    }
+
+    .button-container {
+        height: 18.0625rem;
+        width: 23.5rem;
+    }
+}
+
+@media (min-width: 769px) {
+
+}
+
+@media (min-width: 1440px) {
 
 }
